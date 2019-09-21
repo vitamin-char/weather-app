@@ -1,14 +1,15 @@
 import React from 'react';
-import { StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, Text, View} from 'react-native';
+import Weather from './Weather'
 
 export default function App() {
   state = {
-    isLoaded: false
+    isLoaded: true
   }
   const {isLoaded} = this.state;
   return (
     <View style={styles.container}>
-      {isLoaded ? null : (
+      {isLoaded ? <Weather/> : ( 
       <View style={styles.loading}> 
         <Text style={styles.loadingText}> Getting the weather</Text>
       </View>
