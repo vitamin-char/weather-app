@@ -1,13 +1,14 @@
 import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
 import {LinearGradient} from "expo-linear-gradient";
+import { Ionicons } from '@expo/vector-icons';
 
 export default function Weather() {
     return(
         <LinearGradient
           colors={['#4c669f', '#3b5998', '#192f6a']} style={styles.container}>
          <View style={styles.upper}>
-            <Text>Icon here!</Text>
+            <Ionicons color="white" size={144} name="ios-rainy"/>
             <Text style={styles.temp}>35</Text>
          </View>
          <View style={styles.lower}>
